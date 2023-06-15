@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="formstyle.css">
+    <script src="https://code.jquery.com/jquery-3.7.0.js"
+        integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <div class="parent">
+            <nav class="navbar">
+                <div class="logo">
+                    <a href="index.html"><img src="assets/images/healthIcon.png" alt="logo"
+                            style="width:2em;height:2em;"></a>
+                    <a href="index.html" class="faun">E-Clinic</a>
+                </div>
+                <div>
+                    <a href="javascript:void(0)" class="icon" onclick="myFunction()">
+                        <img src="assets/images/menu.svg" alt="">
+                    </a>
+                </div>
+                <ul class="menu" id="nav">
+                    <li><a href="index.html">Home</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="slideshow-container">
+            <img class="slideShow" src="assets/images/homeImage.jpg" alt="Slide 1">
+            <img class="slideShow" src="assets/images/homeImage2.jpg" alt="Slide 2">
+            <img class="slideShow" src="assets/images/homeImage3.jpg" alt="Slide 3">
+          </div>
+        
+        <div class="form-box">
+            <form class="form">
+                <span class="title">Make An Appointment</span>
+                <span class="subtitle">We'd love to help you, please fill these forms for making an appointments.</span>
+                <div class="form-container">
+                    <input type="text" class="input" placeholder="Full Name" required>
+                    <input type="text" class="input" placeholder="Address" required>
+                    <input type="number" class="input" placeholder="National Identity Number" required>
+                    <input type="text" class="input date-input" placeholder="Birth Date" required>
+                    <input type="number" class="input" placeholder="Contact Number" required>
+                </div>
+                <button>Submit</button>
+            </form>
+            <div class="form-section">
+                <p>Having trouble choosing the right doctor? <a href="index.html#doctors">See Doctor</a> </p>
+            </div>
+        </div>
+
+    </main>
+
+    <script src="slideShow.js"></script>
+    <script src="dateChange.js"></script>
+</body>
+
+</html>
